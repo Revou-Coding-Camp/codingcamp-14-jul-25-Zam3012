@@ -37,7 +37,7 @@ header {
 
 .logo {
     
-    width: 100px;          /* Atur lebar gambar */
+    width: 50px;          /* Atur lebar gambar */
     height: 50px;         /* Atur tinggi gambar */
     border-radius: 50%;   /* Ini adalah kunci untuk membuat gambar menjadi bulat */
     object-fit: cover;    /* Memastikan gambar mengisi area lingkaran dengan baik */
