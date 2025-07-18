@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="https://placehold.co/50x50/EFEFEF/333?text=Z" alt="Logo Profil">
+        <nav>
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Our Profile</a>
+            <a href="#" class="nav-item">Portfolio</a>
+            <a href="#" class="nav-item active">Message Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Hello Visitor, Welcome To My Website.</h1>
+            <p>This is My First Website Created By HTML,JavaScript, and CSS.</p>
+            <img class="welcome-image" src="images/galaxy cat.jpg" alt="Gambar Banner">
+        </section>
+
+        <hr>
+
+        <section class="headquarter-section">
+            <h2>Our Headquarter</h2>
+            <div class="city-container">
+                <div class="city">
+                    <div class="city-circle">
+                        <img class="city-circle" src="images/monas.png" alt="Gambar Banner">
+                    </div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="city">
+                    <div class="city-circle">
+                        <img class="city-circle" src="images/sate.png" alt="Gambar Banner">
+                    </div>
+                    <p>Bandung</p>
+                </div>
+                <div class="city">
+                    <div class="city-circle">
+                        <img class="city-circle" src="images/sby.png" alt="Gambar Banner">
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="message-us-section">
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="message-form">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal-lahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki" required>
+                            <label for="laki-laki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="output-container">
+                    <p><strong>Current time :</strong> <span id="current-time"></span></p>
+                    <p><strong>Nama :</strong> <span id="output-nama"></span></p>
+                    <p><strong>Tanggal Lahir :</strong> <span id="output-tanggal-lahir"></span></p>
+                    <p><strong>Jenis Kelamin :</strong> <span id="output-jenis-kelamin"></span></p>
+                    <p><strong>Pesan :</strong> <span id="output-pesan"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Zam</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
